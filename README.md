@@ -72,5 +72,5 @@ for token in doc:
 ## Usefull Commands
 
 - deactivate: stop the terminal
-- .\\venv\Scripts\activate 
-- source **venv**/bin/activate (run terminal - Windows)
+- .\\venv\Scripts\activate (run terminal - Windows)
+- source **venv**/bin/activate (run terminal - Linux Ubuntu)
