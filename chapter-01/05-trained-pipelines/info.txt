@@ -1,0 +1,5 @@
+A quick tip: To get definitions for the most common tags and labels, you can use the spacy.explain helper function.
+
+For example, "GPE" for geopolitical entity isn't exactly intuitive – but spacy.explain can tell you that it refers to countries, cities and states.
+
+The same works for part-of-speech tags and dependency labels.

@@ -1,0 +1,19 @@
+Match patterns are lists of dictionaries. Each dictionary describes one token. The keys are the names of token attributes, mapped to their expected values.
+
+
+In this example, we're looking for two tokens with the text "iPhone" and "X".
+
+Match exact token texts
+[{"TEXT": "iPhone"}, {"TEXT": "X"}]
+
+
+We can also match on other token attributes. Here, we're looking for two tokens whose lowercase forms equal "iphone" and "x".
+
+Match lexical attributes
+[{"LOWER": "iphone"}, {"LOWER": "x"}]
+
+
+We can even write patterns using attributes predicted by a model. Here, we're matching a token with the lemma "buy", plus a noun. The lemma is the base form, so this pattern would match phrases like "buying milk" or "bought flowers".
+
+Match any token attributes
+[{"LEMMA": "buy"}, {"POS": "NOUN"}]

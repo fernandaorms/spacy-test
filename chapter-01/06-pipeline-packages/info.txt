@@ -1,0 +1,4 @@
+Q: What’s not included in a pipeline package that you can load into spaCy?
+A: The labelled data that the pipeline was trained on.
+
+Explanation: Trained pipelines allow you to generalize based on a set of training examples. Once they’re trained, they use binary weights to make predictions. That’s why it’s not necessary to ship them with their training data.
